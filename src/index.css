@@ -1,0 +1,49 @@
+@import '@fontsource-variable/archivo';
+@import '@fontsource-variable/manrope';
+@import 'tailwindcss';
+
+/* ---- Brand theme (Tailwind v4 tokens) ---------------------------------- */
+@theme {
+  --font-display: 'Archivo Variable', system-ui, sans-serif;
+  --font-body: 'Manrope Variable', system-ui, sans-serif;
+
+  /* Navy — primary brand color (from logo) */
+  --color-navy-50: #eef1f6;
+  --color-navy-100: #d3dbe8;
+  --color-navy-500: #2c4066;
+  --color-navy-700: #1c2c4c;
+  --color-navy-800: #152540;
+  --color-navy-900: #0f1b30;
+
+  /* Red — single locked accent (from logo) */
+  --color-brand-500: #d93b22;
+  --color-brand-600: #c22f18;
+  --color-brand-700: #a52713;
+
+  /* Warm-neutral base (locked, one family) */
+  --color-sand-50: #f8f7f4;
+  --color-sand-100: #efece6;
+  --color-sand-200: #e2ddd3;
+}
+
+/* ---- Base ------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-navy-900);
+  background: var(--color-sand-50);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* Respect reduced motion globally */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
