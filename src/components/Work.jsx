@@ -1,5 +1,6 @@
 import { motion, useReducedMotion } from 'motion/react'
 import { useLang } from '../i18n/LanguageContext'
+import SectionHeading from './SectionHeading'
 
 export default function Work() {
   const { t } = useLang()
@@ -15,10 +16,7 @@ export default function Work() {
   return (
     <section id="work" className="bg-sand-50 py-20 lg:py-28">
       <div className="mx-auto max-w-[1400px] px-5 lg:px-8">
-        <h2 className="max-w-2xl text-3xl font-extrabold leading-tight text-navy-900 sm:text-4xl lg:text-5xl">
-          {t.work.title}
-        </h2>
-        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-navy-500">{t.work.subtitle}</p>
+        <SectionHeading title={t.work.title} subtitle={t.work.subtitle} />
 
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-2 lg:grid-rows-2">
           {tiles.map((tile, i) => (

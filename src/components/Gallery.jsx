@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import { CaretLeft, CaretRight } from '@phosphor-icons/react'
 import { useLang } from '../i18n/LanguageContext'
+import SectionHeading from './SectionHeading'
 
 // Real project photos, shown one at a time in a carousel.
 const photos = [
@@ -44,15 +45,12 @@ export default function Gallery() {
   return (
     <section id="gallery" className="bg-navy-900 py-20 lg:py-28">
       <div className="mx-auto max-w-[1400px] px-5 lg:px-8">
-        <div className="max-w-2xl">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-brand-500">
-            {t.gallery.eyebrow}
-          </p>
-          <h2 className="text-3xl font-extrabold leading-tight text-white sm:text-4xl lg:text-5xl">
-            {t.gallery.title}
-          </h2>
-          <p className="mt-4 text-lg leading-relaxed text-white/70">{t.gallery.subtitle}</p>
-        </div>
+        <SectionHeading
+          eyebrow={t.gallery.eyebrow}
+          title={t.gallery.title}
+          subtitle={t.gallery.subtitle}
+          light
+        />
 
         <div className="relative mx-auto mt-12 max-w-4xl">
           {/* Stage: one photo at a time, slides in from the side */}
