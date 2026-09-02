@@ -75,6 +75,13 @@ export const translations = {
       commercial: 'Commercial & flat roofs',
       repair: 'Repairs & storm damage',
     },
+    gallery: {
+      eyebrow: 'Real projects',
+      title: 'Recent jobs across the DMV',
+      subtitle: 'Real roofs from our own crew. Swipe through a few we finished lately.',
+      prev: 'Previous photo',
+      next: 'Next photo',
+    },
     cta: {
       title: 'Ready for a roof you can forget about?',
       subtitle:
@@ -92,7 +99,19 @@ export const translations = {
       areaLabel: 'Service area',
       areaValue: 'Washington DC, Maryland & Virginia (DMV)',
       hoursLabel: 'Hours',
-      hoursValue: 'Mon–Sat · 7:00 AM – 7:00 PM',
+      hoursValue: 'Mon–Sat 7AM–7PM · 24/7 for emergencies',
+      emailLabel: 'Email',
+    },
+    form: {
+      title: 'Request your free estimate',
+      subtitle: 'Send us your info and we will get back to you fast. Roofing emergency? We answer 24/7.',
+      name: 'Full name',
+      phone: 'Phone',
+      email: 'Email',
+      message: 'How can we help? (address, type of roof, problem...)',
+      submit: 'Send request',
+      emergency: '24/7 emergency service',
+      success: 'Thank you! We received your request and will contact you shortly.',
     },
     footer: {
       tagline: 'Licensed & insured residential and commercial roofing serving the DMV.',
@@ -177,6 +196,13 @@ export const translations = {
       commercial: 'Comercial y techos planos',
       repair: 'Reparación y tormenta',
     },
+    gallery: {
+      eyebrow: 'Proyectos reales',
+      title: 'Trabajos recientes en el DMV',
+      subtitle: 'Techos reales hechos por nuestro propio equipo. Vea algunos que terminamos hace poco.',
+      prev: 'Foto anterior',
+      next: 'Foto siguiente',
+    },
     cta: {
       title: '¿Listo para un techo del que se pueda olvidar?',
       subtitle:
@@ -194,7 +220,19 @@ export const translations = {
       areaLabel: 'Área de servicio',
       areaValue: 'Washington DC, Maryland y Virginia (DMV)',
       hoursLabel: 'Horario',
-      hoursValue: 'Lun–Sáb · 7:00 AM – 7:00 PM',
+      hoursValue: 'Lun–Sáb 7AM–7PM · 24/7 para emergencias',
+      emailLabel: 'Correo',
+    },
+    form: {
+      title: 'Solicite su cotización gratis',
+      subtitle: 'Envíenos sus datos y le respondemos rápido. ¿Emergencia con su techo? Atendemos 24/7.',
+      name: 'Nombre completo',
+      phone: 'Teléfono',
+      email: 'Correo',
+      message: '¿Cómo le podemos ayudar? (dirección, tipo de techo, problema...)',
+      submit: 'Enviar solicitud',
+      emergency: 'Servicio de emergencia 24/7',
+      success: '¡Gracias! Recibimos su solicitud y le contactaremos muy pronto.',
     },
     footer: {
       tagline: 'Techado residencial y comercial con licencia y seguro, sirviendo el DMV.',
@@ -211,4 +249,8 @@ export const BUSINESS = {
   phoneDisplay: '(202) 539-3323',
   phoneRaw: '+12025393323',
   whatsapp: '12025393323',
+  phone2Display: '(240) 334-1077',
+  phone2Raw: '+12403341077',
+  whatsapp2: '12403341077',
+  email: 'perezroofing.sv@gmail.com',
 }
