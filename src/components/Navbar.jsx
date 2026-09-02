@@ -11,7 +11,7 @@ const links = [
 ]
 
 export default function Navbar() {
-  const { t, lang, toggle } = useLang()
+  const { t } = useLang()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -52,13 +52,6 @@ export default function Navbar() {
               {t.nav[l.key]}
             </a>
           ))}
-          <button
-            onClick={toggle}
-            className="rounded-full border border-white/30 px-3 py-1 text-xs font-bold text-white transition-colors hover:bg-white/10"
-            aria-label="Switch language"
-          >
-            {lang === 'en' ? 'ES' : 'EN'}
-          </button>
           <a
             href="#contact"
             className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-brand-600 active:scale-[0.98]"
@@ -70,13 +63,6 @@ export default function Navbar() {
 
         {/* Mobile controls */}
         <div className="flex items-center gap-3 lg:hidden">
-          <button
-            onClick={toggle}
-            className="rounded-full border border-white/30 px-3 py-1 text-xs font-bold text-white"
-            aria-label="Switch language"
-          >
-            {lang === 'en' ? 'ES' : 'EN'}
-          </button>
           <button
             onClick={() => setOpen((v) => !v)}
             className="text-white"
